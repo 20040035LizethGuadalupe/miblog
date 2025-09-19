@@ -1,0 +1,100 @@
+body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #f8f9fa, #e8ecf1);
+            text-align: center;
+            color: #333;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #0077cc;
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            width: 80%;
+            max-width: 650px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        table:hover {
+            transform: scale(1.02);
+        }
+
+        th, td {
+            padding: 14px 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #0077cc;
+            color: white;
+            font-weight: bold;
+        }
+
+        img {
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: white;
+            background: #0077cc;
+            padding: 12px;
+            border-radius: 50%;
+            font-size: 18px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .social-icons a:hover {
+            background-color: #005fa3;
+            transform: scale(1.1);
+        }
+
+        /* --- NUEVO ESTILO PARA IMÁGENES HORIZONTALES --- */
+        .imagenes-horizontal {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap; /* para que se acomoden en varias filas si la pantalla es pequeña */
+        }
+
+        .imagenes-horizontal div {
+            text-align: center;
+        }
+
+        .imagenes-horizontal img {
+            width: 120px;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            table { width: 95%; }
+        }
